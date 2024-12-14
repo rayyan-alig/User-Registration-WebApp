@@ -1,0 +1,50 @@
+﻿@model PersAss;
+@{
+    ViewData["Title"] = "Assessment";
+}
+<h1>Details of Personal Assessment</h1>
+<br />
+<span>Note: Enter the details which are applicable else you can fill "Not Applicable"</span>
+<br />
+<br />
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="strength"></label>
+        <input asp-for="strength" class="form-control" />
+        <span asp-validation-for="strength" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="weaknesses"></label>
+        <input asp-for="weaknesses" class="form-control" />
+        <span asp-validation-for="weaknesses" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="Hobbies"></label>
+        <input asp-for="Hobbies" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="Sports"></label>
+        <input asp-for="Sports" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="Goals"></label>
+        <input asp-for="Goals" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="atMNJ"></label>
+        <input asp-for="atMNJ" class="form-control" />
+        <span asp-validation-for="atMNJ" class="text-danger"></span>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Save</button>
+        <a asp-controller="Registration" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Go to next step
+        </a>
+    </div>
+</form>
+

@@ -1,0 +1,58 @@
+﻿@model PrevEmp;
+@{
+    ViewData["Title"] = "PrevEmp";
+}
+
+<h1>Details of Previous Employers</h1>
+<br />
+<span>Note: Enter the details which are applicable else you can fill "Not Applicable"</span>
+<br />
+<br />
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="CompName"></label>
+        <input asp-for="CompName" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="CompAddress"></label>
+        <input asp-for="CompAddress" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="HRName"></label>
+        <input asp-for="HRName" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="HRMobile"></label>
+        <input asp-for="HRMobile" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="HREmail"></label>
+        <input asp-for="HREmail" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="RepManager"></label>
+        <input asp-for="RepManager" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="ContRepManager"></label>
+        <input asp-for="ContRepManager" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="CTC"></label>
+        <input asp-for="CTC" class="form-control" />
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Save</button>
+        <a asp-controller="Registration" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Go to next step
+        </a>
+    </div>
+
+</form>

@@ -1,0 +1,75 @@
+﻿@model Edu
+@{
+    ViewData["Title"] = "Education";
+}
+
+<h1>Educational Qualifications</h1>
+<br />
+<span>Note: Enter the details which are applicable else you can fill "Not Applicable"</span>
+<br />
+<br />
+
+<form method="post">
+    <div class="mb-3">
+    <label asp-for="tenth"></label>
+    <input asp-for="tenth" class="form-control" />
+    <span asp-validation-for="tenth" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+    <label asp-for="tenthboard"></label>
+    <input asp-for="tenthboard" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+    <label asp-for="twelth"></label>
+    <input asp-for="twelth" class="form-control" />
+    <span asp-validation-for="twelth" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+    <label asp-for="twelthboard"></label>
+    <input asp-for="twelthboard" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+    <label asp-for="UGCousre"></label>
+    <input asp-for="UGCousre" class="form-control" />
+    <span asp-validation-for="UGCousre" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+    <label asp-for="University"></label>
+    <input asp-for="University" class="form-control" />
+    <span asp-validation-for="University" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+    <label asp-for="UG"></label>
+    <input asp-for="UG" class="form-control" />
+    <span asp-validation-for="UG" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+    <label asp-for="PGCousre"></label>
+    <input asp-for="PGCousre" class="form-control" />
+    </div>
+    <div class="mb-3">
+    <label asp-for="PGUniversity"></label>
+    <input asp-for="PGUniversity" class="form-control" />
+    </div>
+    <div class="mb-3">
+    <label asp-for="PG"></label>
+    <input asp-for="PG" class="form-control" />
+    </div>
+    <div class="mb-3">
+    <label asp-for="project"></label>
+    <input asp-for="project" class="form-control" />
+    </div>
+    <div class="mb-3">
+    <label asp-for="software"></label>
+    <input asp-for="software" class="form-control" />
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Save</button>
+        <a asp-controller="Registration" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Go to next step
+        </a>
+    </div>
+    </form>

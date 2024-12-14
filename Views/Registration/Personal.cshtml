@@ -1,0 +1,63 @@
+﻿@model Personal
+@{
+    ViewData["Title"] = "Personal";
+}
+
+
+<h1>Personal Details</h1>
+<br />
+<span>Note: Enter the details which are applicable else you can fill "Not Applicable"</span>
+<br />
+<br />
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+       <input asp-for="Name" class="form-control"/>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="FName"></label>
+        <input asp-for="FName" class="form-control" />
+        <span asp-validation-for="FName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Nationality"></label>
+       <input asp-for="Nationality" class="form-control"/>
+        
+    </div>
+    <div class="mb-3">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+       
+    </div>
+    <div class="mb-3">
+        <label asp-for="DOB"></label>
+        <input asp-for="DOB" type="date" class="form-control" />
+        <span asp-validation-for="DOB" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="PAN"></label>
+        <input asp-for="PAN" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="mobile"></label>
+        <input asp-for="mobile" class="form-control" />
+        
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Passport"></label>
+        <input asp-for="Passport" class="form-control" />
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Save</button>
+        <a asp-controller="Registration" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Go to next step
+        </a>
+    </div>
+    </form>

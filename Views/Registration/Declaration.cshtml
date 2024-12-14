@@ -1,0 +1,54 @@
+﻿@model Declaration;
+@{
+    ViewData["Title"] = "Declaration";
+}
+
+<h1>Declaration</h1>
+<br />
+<span>Note: Enter the details which are applicable else you can fill "Not Applicable"</span>
+<br />
+<br />
+<form method="post">
+
+    <span>
+        "I understand that any employment by MNJ Software India Private Limited or its affiliated
+        companies is conditioned upon positive responses from my references, bonding eligibility,
+        continued adherence to MNJ Software India Private Limited policies and procedures, applicable
+        rules and regulations and job performance satisfactory at all times to MNJ Software Private
+        Limited.
+        I consent to take any pre or post-employment examinations as may be required by MNJ Software
+        Private Limited or its permitted agents, its representative, and release MNJ Software Private
+        Limited and its agents from any liability that may arise from such examination.
+        I authorize an inquiry to be made on the information contained on this application. Former
+        employers and officials of education institutes, named on this application are authorized to give
+        information about me and I release them from all liability for issuing such information.
+        I hereby attest and warrant that all my answers on this application as well as on all forms
+        completed in conjunction with my employment are true and accurate. I understand that my
+        misrepresentation of facts, failure to disclose information required on this application or material
+        change in my information provided which is not reported to Human Resources shall be cause for
+        dismissal regardless of when discovered by MNJ Software Private Limited
+        I understand, and authorize, that MNJ Software may share my consumer report and/or
+        investigative report with third parties including auditors, government agencies, and clients as
+        necessary.
+        I hereby declare that the information given by me is true and the certificates or documents
+        submitted are genuine to the best of my knowledge."
+    </span>
+    <br />
+    <br />
+
+    <div class="mb-3">
+        <label asp-for="CapitalName"></label>
+        <input asp-for="CapitalName" class="form-control" />
+        <span asp-validation-for="CapitalName" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="signeddate"></label>
+        <input asp-for="signeddate" type="date" class="form-control" />
+        <span asp-validation-for="signeddate" class="text-danger"></span>
+
+    </div>
+
+
+    <button type="submit" class=" btn btn-primary" style="width:150px">Submit</button>
+</form>
